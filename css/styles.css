@@ -7,14 +7,10 @@
 }
 
 body.darkmode .page-section {
-    background-color: #1f2223 !important;
+    background-color: #1f2223;
 }
 
 body.darkmode .text-secondary {
-    color: rgb(188, 209, 227) !important;
-}
-
-body.darkmode .divider-custom .divider-custom-icon {
     color: rgb(188, 209, 227) !important;
 }
 
