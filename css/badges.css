@@ -1,0 +1,111 @@
+:root {
+    --bs-WEB-rgb: 188, 64, 26;
+    --bs-PLUGIN-rgb: 142, 188, 26;
+    --bs-MOD-rgb: 188, 26, 58;
+    --bs-APP-rgb: 26, 118, 188;
+    --bs-NODEJS-rgb: 26, 118, 188;
+    --bs-Language-JS-rgb: 241, 224, 90;
+    --bs-Language-Python-rgb: 53, 114, 165;
+    --bs-Language-Java-rgb: 176, 114, 25;
+    --bs-Language-CSS-rgb: 86, 61, 124;
+    --bs-Language-HTML-rgb: 227, 76, 38;
+    --bs-Language-Cpp-rgb: 243, 75, 125;
+}
+
+.badge {
+    font-size: 0.6em;
+}
+
+.bg-main {
+    font-size: 0.9em;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.bg-WEB {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-WEB-rgb), var(--bs-bg-opacity)) !important;
+}
+.bg-WEB::after {
+    content: "WEB";
+}
+  
+.bg-PLUGIN {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-PLUGIN-rgb), var(--bs-bg-opacity)) !important;
+}
+.bg-PLUGIN::after {
+    content: "PLUGIN";
+}
+  
+.bg-MOD {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-MOD-rgb), var(--bs-bg-opacity)) !important;
+}
+.bg-MOD::after {
+    content: "MOD";
+}
+
+.bg-APP {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-APP-rgb), var(--bs-bg-opacity)) !important;
+}
+.bg-APP::after {
+    content: "APP";
+}
+
+.bg-NODEJS {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-NODEJS-rgb), var(--bs-bg-opacity)) !important;
+}
+.bg-NODEJS::after {
+    content: "NodeJS";
+}
+
+.bg-Language-JS {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-Language-JS-rgb), var(--bs-bg-opacity)) !important;
+}
+.bg-Language-JS::after {
+    content: "JS";
+}
+  
+.bg-Language-Python {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-Language-Python-rgb), var(--bs-bg-opacity)) !important;
+}
+.bg-Language-Python::after {
+    content: "Python";
+}
+  
+.bg-Language-Java {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-Language-Java-rgb), var(--bs-bg-opacity)) !important;
+}
+.bg-Language-Java::after {
+    content: "Java";
+}
+
+.bg-Language-CSS {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-Language-CSS-rgb), var(--bs-bg-opacity)) !important;
+}
+.bg-Language-CSS::after {
+    content: "CSS";
+}
+
+.bg-Language-HTML {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-Language-HTML-rgb), var(--bs-bg-opacity)) !important;
+}
+.bg-Language-HTML::after {
+    content: "HTML";
+}
+
+.bg-Language-Cpp {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-Language-Cpp-rgb), var(--bs-bg-opacity)) !important;
+}
+.bg-Language-Cpp::after {
+    content: "C++";
+}
