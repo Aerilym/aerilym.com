@@ -2,3 +2,10 @@
     object-fit:cover;
     border-radius:50%;
 }
+
+.img-modal {
+    height: 30% !important;
+    width: 100% !important;
+    object-fit: none;
+    object-position: 100% 0;
+}
