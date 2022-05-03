@@ -1,0 +1,7 @@
+.modal-content {
+    max-height: 90vh !important;
+}
+
+.modal-body .col-lg-8 {
+    max-height: 80vh !important;
+}
