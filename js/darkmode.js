@@ -26,7 +26,14 @@ function darkmodeToggle () {
     document.cookie = 'darkmodepref=False; expires=Thu, 18 Dec 2030 12:00:00 UTC'
     darkmodebutton.innerText = 'Dark Mode'
   }
-  document.body.classList.toggle('darkmode')
+  const bgcolor = document.documentElement.style.getPropertyValue('--bs-body-bg')
+  console.log(bgcolor)
+  if (bgcolor === '#1f2223') {
+    document.documentElement.style.setProperty('--bs-body-bg', '#fff')
+  } else {
+    document.documentElement.style.setProperty('--bs-body-bg', '#1f2223')
+  }
+  // document.body.classList.toggle('darkmode')
 }
 
 function checkDarkmode() {
