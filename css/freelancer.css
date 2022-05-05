@@ -62,10 +62,6 @@
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
-  --bs-body-bg-dark: #1f2223;
-  --bs-heading: #2C3E50 ;
-  --bs-primary-rgb-dark: 5, 44, 36;
-  --bs-secondary-rgb-dark: 239, 244, 248;
 }
 
 *,
@@ -11388,8 +11384,8 @@ html {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     transition: padding-top 0.3s, padding-bottom 0.3s;
   }
   #mainNav .navbar-brand {
@@ -11491,13 +11487,13 @@ html {
   padding: 1rem;
 }
 .portfolio-modal .portfolio-modal-title {
-  font-size: 2rem;
+  font-size: 2.25rem;
   line-height: 2rem;
 }
 @media (min-width: 992px) {
   .portfolio-modal .portfolio-modal-title {
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 3rem;
+    line-height: 2.5rem;
   }
 }
 
