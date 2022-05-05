@@ -35,3 +35,10 @@ body.darkmode .text-secondary {
     --bs-text-opacity: 1;
     color: rgba(var(--bs-secondary-rgb-dark), var(--bs-text-opacity)) !important;
 }
+
+body.darkmode .divider-custom-line {
+    background-color: #fff;
+}
+body.darkmode .divider-custom-icon {
+    color: #fff;
+}
