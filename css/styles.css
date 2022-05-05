@@ -1,19 +1,44 @@
+body.darkmode{
+    background-color: rgb(38, 38, 38);
+    color: #eee;
+}
+
 .modal-content {
     max-height: 90vh !important;
+    background-color: var(--bs-body-bg);
+}
+
+body.darkmode .modal-content {
+    background-color: rgb(38, 38, 38);
 }
 
 .modal-body .col-lg-8 {
     max-height: 80vh !important;
 }
 
-body.darkmode .page-section {
-    background-color: #1f2223;
+.text-primary {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+}
+
+body.darkmode .text-primary {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-primary-rgb-dark), var(--bs-text-opacity)) !important;
+}
+  
+.text-secondary {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
 }
 
 body.darkmode .text-secondary {
-    color: rgb(188, 209, 227) !important;
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-secondary-rgb-dark), var(--bs-text-opacity)) !important;
 }
 
-body.darkmode {
-    color: #e1ddd6 !important;
+body.darkmode .divider-custom-line {
+    background-color: #fff;
+}
+body.darkmode .divider-custom-icon {
+    color: #fff;
 }
