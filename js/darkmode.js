@@ -1,27 +1,18 @@
 function getCookie (name) {
-  const dc = document.cookie
-  const prefix = name + '='
-  let begin = dc.indexOf('; ' + prefix)
-  const end = null
-  if (begin === -1) {
-    begin = dc.indexOf(prefix)
-    if (begin !== 0) return null
-  } else {
-    begin += 2
-    let end = document.cookie.indexOf(';', begin)
-    if (end === -1) {
-      end = dc.length
-    }
-  }
-  return decodeURI(dc.substring(begin + prefix.length, end))
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
 }
 
 function darkmodeToggle () {
   const myCookie = getCookie('darkmodepref')
+  console.log(myCookie)
   const darkmodebutton = document.getElementById('darkmodebutton')
   if (myCookie.includes('False')) {
+    console.log('false')
     document.cookie = 'darkmodepref=True; expires=Thu, 18 Dec 2030 12:00:00 UTC'
   } else if (myCookie.includes('True')) {
+    console.log('true')
     document.cookie = 'darkmodepref=False; expires=Thu, 18 Dec 2030 12:00:00 UTC'
   }
   if (darkmodebutton.innerText === 'Dark Mode') {
